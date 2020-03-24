@@ -12,6 +12,8 @@ public class logintest {
 	public void test_Home_Page_Appear_Correct(){
 		System.setProperty("webdriver.gecko.driver", 
 				"/home/arpita/Downloads/geckodriver-v0.21.0-linux64/geckodriver");
+		//System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") +
+		//		"/src/test/resources/executables/chromedriver");
 		WebDriver driver = new FirefoxDriver();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.get("https://www.google.com/");
